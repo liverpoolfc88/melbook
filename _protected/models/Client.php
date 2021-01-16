@@ -30,7 +30,7 @@ class Client extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'phone'], 'required'],
-            [['user_id'], 'integer'],
+            [['user_id','count_contact'], 'integer'],
             [['name', 'phone'], 'string', 'max' => 255],
             [['create_at', 'connect_at'], 'string', 'max' => 128],
         ];
@@ -46,6 +46,7 @@ class Client extends \yii\db\ActiveRecord
             'name' => 'Nomi',
             'phone' => 'Telefoni',
             'user_id' => 'Bog`langan ishchi',
+            'count_contact' => 'Murojaatlar soni',
             'create_at' => 'Murojaat vaqti',
             'connect_at' => 'Bog`lanilgan vaqti',
         ];

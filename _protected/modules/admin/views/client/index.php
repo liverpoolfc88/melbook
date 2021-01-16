@@ -46,6 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'id',
             'name',
             'phone',
+            'count_contact',
             [
                 'attribute' => 'user_id',
                 'value' => function ($data) {

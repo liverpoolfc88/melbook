@@ -17,7 +17,7 @@ class ClientSearch extends Client
     public function rules()
     {
         return [
-            [['id', 'user_id'], 'integer'],
+            [['id', 'user_id','count_contact'], 'integer'],
             [['name', 'phone', 'create_at', 'connect_at'], 'safe'],
         ];
     }
@@ -60,6 +60,7 @@ class ClientSearch extends Client
         $query->andFilterWhere([
             'id' => $this->id,
             'user_id' => $this->user_id,
+            'count_contact' => $this->count_contact,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])

@@ -143,12 +143,18 @@ class SiteController extends Controller
         $user_id = Yii::$app->user->identity->id;
         $name = $_POST['name'];
         $phone = $_POST['phone'];
-
+        $model_yes = Client::find()->where(['phone' => $phone])->one();
         $model = new Client();
-//        $model->user_id = $user_id;
-        $model->name = $name;
-        $model->phone = $phone;
-        $model->save();
+        if (!$model_yes) {
+
+            $model->name = $name;
+            $model->phone = $phone;
+            $model->count_contact = 1;
+            $model->save();
+        }
+
+        $model_yes->count_contact = $model_yes->count_contact+1;
+        $model_yes->save();
 
         Yii::$app->response->format = 'json';
         return [ 'id'=>$model->id, 'data' => 'success' ];
