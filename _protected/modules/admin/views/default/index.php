@@ -57,6 +57,7 @@
                     <th>Telefon</th>
                     <th>Murojaat vaqti</th>
                     <th>Kitoblari</th>
+                    <th>Murojaatlar soni</th>
                     <th>Bog`lanish</th>
                     <th>O'chirish</th>
                 </tr>
@@ -69,7 +70,8 @@
     </div>
 </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="/themes/jquery/jquery.min.js"></script>
 
 <script>
     $(function () {
@@ -108,15 +110,14 @@
                     var table = data.jadval;
                     let tab = '';
                     $.each(table, function (key, value) {
-                      
-                       
                         // document.write(a.join(','));
                         var num = parseInt(key) + 1;
-                        tab += "<tr><td>" + '| ' + num + "</td>" +
-                            "<td>" + '| ' + value.name + '</td>' +
-                            "<td>" + '| ' + value.phone + '</td>' +
-                            "<td>" + '| ' + value.create_at + '</td>' +
-                            "<td>" + '| ' +  value.book  +'</td>' +
+                        tab += "<tr><td>"  + num + "</td>" +
+                            "<td>"  + value.name + '</td>' +
+                            "<td>"  + value.phone + '</td>' +
+                            "<td>"  + value.create_at + '</td>' +
+                            "<td>"  +  value.book  +'</td>' +
+                            "<td>"  +  value.count_contact  +'</td>' +
                             "<td><a data-id='" + value.id + "' class='connect btn btn-success'>" + 'connect' + '</a></td>' +
                             "<td><a data-id='" + value.id + "' class='delete btn btn-danger'>" + 'o`chirish' + '</a></td>' +
                             "</tr>"
@@ -137,3 +138,9 @@
 
     });
 </script>
+
+<style>
+    tr td{
+        border: #0E0EFF solid 1px;
+    }
+</style>

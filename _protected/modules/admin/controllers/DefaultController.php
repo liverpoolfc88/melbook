@@ -64,6 +64,7 @@ class DefaultController extends Controller
                'id'=> $value->id,
                'name'=> $value->name,
                'phone'=> $value->phone,
+               'count_contact'=> $value->count_contact,
                'user_id'=> $value->user_id,
                'book'=> $kitoblar
             ]);

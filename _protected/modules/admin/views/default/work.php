@@ -51,6 +51,8 @@
                     <th>T/r</th>
                     <th>Ismi</th>
                     <th>Telefon</th>
+<!--                    <th>Kitoblari</th>-->
+                    <th>Murojaatlar soni</th>
                     <th>Murojaat vaqti</th>
                     <th>Bog'lanish vaqti</th>
                 </tr>
@@ -61,6 +63,8 @@
                         <td>| <?=$key+1?></td>
                         <td>| <?=$value->name?></td>
                         <td>| <?=$value->phone?></td>
+<!--                        <td>| --><?//=$value->orders->book?><!--</td>-->
+                        <td>| <?=$value->count_contact?></td>
                         <td>| <?=$value->create_at?></td>
                         <td>| <?=$value->connect_at?></td>
                     </tr>
@@ -72,7 +76,7 @@
     </div>
 </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/themes/jquery/jquery.min.js"></script>
 
 <!-- 
 <script>

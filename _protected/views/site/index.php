@@ -101,11 +101,8 @@ use yii\widgets\ActiveForm;
     <!-- ======= Details Section ======= -->
     <section class="details">
         <div  class="container">
-
-
             <div class="row  flex-row content height-300">
-
-                <div style="order: 2" class="disflex-posrel col-md-4 order-1 order-md-2 img-fluid" data-aos="fade-left">
+                <div style=" display: flex; order: 2; align-items: center; justify-content: center;" class="disflex-posrel col-md-4 order-1 order-md-2 img-fluid" data-aos="fade-left">
                     <div class="one-img">
                         <img src="<?=(empty($photo3)?'':$photo3)?>" class="img-fluid" alt="">
                     </div>
@@ -116,21 +113,17 @@ use yii\widgets\ActiveForm;
 <!--                        <img src="/themes/Bootslander/assets/img/rus.png" class="img-fluid" alt="">-->
 <!--                    </div>-->
                 </div>
-
                 <div style="order: 1" class=" sasa1 col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
                     <h3><?=$word3?></h3>
                     <!-- <h3>123</h3> -->
                 </div>
-
             </div>
-
             <div  class="row content mt-3">
                 <div class="sasa3 col-md-12 pt-4" data-aos="fade-up">
                     <h3>AUDIO KURS NARXI : <a style=" text-decoration: line-through;"><?=$summ?> so`m</a></h3>
                     <h1>SIZNING CHEGIRMANGIZ <span class="sasa4"><?=$percent?>%</span>
                         <p class="sasa5"><?=$summ-($summ*$percent)/100?> so`m</p></h1>
                     <h1>SIZNING FOYDANGIZ<p class="sasa6"><?=($summ*$percent)/100?> so`m</p></h1>
-
                 </div>
             </div>
 
@@ -587,40 +580,34 @@ use yii\widgets\ActiveForm;
     </section><!-- End Details Section -->
     <hr>
 
-
+    <!-- ======= Details Section ======= -->
     <section class="details">
-        <div class="container">
-
-
+        <div  class="container">
             <div class="row  flex-row content height-300">
-                <div class="sasa1 col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
-                    <h3><?=$word3?></h3>
-                </div>
-                <div class="disflex-posrel col-md-4 order-1 order-md-2 img-fluid" data-aos="fade-left">
+                <div style=" display: flex; order: 2; align-items: center; justify-content: center;" class="disflex-posrel col-md-4 order-1 order-md-2 img-fluid" data-aos="fade-left">
                     <div class="one-img">
                         <img src="<?=(empty($photo3)?'':$photo3)?>" class="img-fluid" alt="">
                     </div>
-<!--                    <div class="one-img">-->
-<!--                        <img src="/themes/Bootslander/assets/img/ingliz.png" class="img-fluid" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="two-img">-->
-<!--                        <img src="/themes/Bootslander/assets/img/rus.png" class="img-fluid" alt="">-->
-<!--                    </div>-->
+                    <!--                    <div class="one-img">-->
+                    <!--                        <img src="/themes/Bootslander/assets/img/ingliz.png" class="img-fluid" alt="">-->
+                    <!--                    </div>-->
+                    <!--                    <div class="two-img">-->
+                    <!--                        <img src="/themes/Bootslander/assets/img/rus.png" class="img-fluid" alt="">-->
+                    <!--                    </div>-->
                 </div>
-
+                <div style="order: 1" class=" sasa1 col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+                    <h3><?=$word3?></h3>
+                    <!-- <h3>123</h3> -->
+                </div>
             </div>
-
-            <div class="row content mt-3">
+            <div  class="row content mt-3">
                 <div class="sasa3 col-md-12 pt-4" data-aos="fade-up">
                     <h3>AUDIO KURS NARXI : <a style=" text-decoration: line-through;"><?=$summ?> so`m</a></h3>
                     <h1>SIZNING CHEGIRMANGIZ <span class="sasa4"><?=$percent?>%</span>
                         <p class="sasa5"><?=$summ-($summ*$percent)/100?> so`m</p></h1>
                     <h1>SIZNING FOYDANGIZ<p class="sasa6"><?=($summ*$percent)/100?> so`m</p></h1>
-
                 </div>
             </div>
-
-
 
         </div>
     </section><!-- End Details Section -->

@@ -151,13 +151,15 @@ class SiteController extends Controller
             $model->phone = $phone;
             $model->count_contact = 1;
             $model->save();
+            Yii::$app->response->format = 'json';
+            return [ 'id'=>$model->id, 'data' => 'success' ];
         }
 
         $model_yes->count_contact = $model_yes->count_contact+1;
         $model_yes->save();
 
         Yii::$app->response->format = 'json';
-        return [ 'id'=>$model->id, 'data' => 'success' ];
+        return [ 'id'=>$model_yes->id, 'data' => 'success' ];
     }
     public function actionOrder(){
         $chek = $_POST['chek'];

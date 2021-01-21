@@ -40,8 +40,8 @@
 </style>
 <section>
     <div  class="container">
-        <div id="w0" class="row">
         <button id="ref" class="btn btn-default">Refresh</button>
+        <div id="w0" class="row">
             <table class="table styled-table">
                 <thead>
                 <tr>
@@ -66,7 +66,7 @@
     </div>
 </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/themes/jquery/jquery.min.js"></script>
 <script>
     $(function () {
         $('#ref').click(function () {

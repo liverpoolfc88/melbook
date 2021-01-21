@@ -120,7 +120,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ?>
 
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/themes/jquery/jquery.min.js"></script>
 <script>
     $(function () {
         $('#ref').click(function () {

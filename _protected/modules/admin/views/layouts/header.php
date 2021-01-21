@@ -10,6 +10,9 @@ use yii\helpers\Url;
     .s_open:hover .dropdown-menu {
         display: block;
     }
+    /*.main-header .sidebar-toggle{*/
+    /*    padding: unset !important;*/
+    /*}*/
 </style>
 <header class="main-header">
     <? $name = 'MELBOOK' ?>
@@ -24,8 +27,6 @@ use yii\helpers\Url;
         <div class="navbar-custom-menu">
 
             <ul class="nav navbar-nav">
-
-                <!-- User Account: style can be found in dropdown.less -->
 
                 <li class="dropdown user user-menu s_open">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
